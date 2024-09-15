@@ -1,0 +1,55 @@
+{
+  "multipart": [
+    {
+      "apply": { "model": "informaticraft:block/wire_none" }
+    },
+    {
+      "when": { "north": "wire" },
+      "apply": { "model": "informaticraft:block/wire_side" }
+    },
+    {
+      "when": { "north": "plug" },
+      "apply": { "model": "informaticraft:block/wire_plug" }
+    },
+    {
+      "when": { "east": "wire" },
+      "apply": { "model": "informaticraft:block/wire_side", "y": 90 }
+    },
+    {
+      "when": { "east": "plug" },
+      "apply": { "model": "informaticraft:block/wire_plug", "y": 90 }
+    },
+    {
+      "when": { "south": "wire" },
+      "apply": { "model": "informaticraft:block/wire_side", "y": 180 }
+    },
+    {
+      "when": { "south": "plug" },
+      "apply": { "model": "informaticraft:block/wire_plug", "y": 180 }
+    },
+    {
+      "when": { "west": "wire" },
+      "apply": { "model": "informaticraft:block/wire_side", "y": 270 }
+    },
+    {
+      "when": { "west": "plug" },
+      "apply": { "model": "informaticraft:block/wire_plug", "y": 270 }
+    },
+    {
+      "when": { "up": "wire" },
+      "apply": { "model": "informaticraft:block/wire_side", "x": 270 }
+    },
+    {
+      "when": { "up": "plug" },
+      "apply": { "model": "informaticraft:block/wire_plug", "x": 270 }
+    },
+    {
+      "when": { "down": "wire" },
+      "apply": { "model": "informaticraft:block/wire_side", "x": 90 }
+    },
+    {
+      "when": { "down": "plug" },
+      "apply": { "model": "informaticraft:block/wire_plug", "x": 90 }
+    }
+  ]
+}

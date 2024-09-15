@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "informaticraft:block/display"
+    },
+    "facing=east": {
+      "model": "informaticraft:block/display",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "informaticraft:block/display",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "informaticraft:block/display",
+      "y": 270
+    }
+  }
+}

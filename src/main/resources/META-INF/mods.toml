@@ -1,0 +1,26 @@
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}"
+license="MIT"
+
+[[mods]]
+modId="informaticraft"
+version="1.0"
+displayName="Informaticraft"
+# A file name (in the root of the mod JAR) containing a logo for display
+#logoFile="examplemod.png" #optional
+authors="Ben Hess"
+description='''Tech and automation thingies from my brain.'''
+
+[[dependencies.informaticraft]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.informaticraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
