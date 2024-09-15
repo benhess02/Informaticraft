@@ -12,7 +12,6 @@ public class ComputerScreen extends AbstractContainerScreen<ComputerMenu> {
 
     public ComputerScreen(ComputerMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
-        this.imageHeight = 198;
     }
 
     @Override

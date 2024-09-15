@@ -6,6 +6,8 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.CraftingMenu;
+import net.minecraft.world.inventory.FurnaceMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
@@ -14,21 +16,21 @@ public class ComputerMenu extends AbstractContainerMenu {
     protected Container container;
 
     public ComputerMenu(int id, Inventory inventory) {
-        this(id, inventory, new SimpleContainer(1));
+        this(id, inventory, new SimpleContainer(2));
     }
 
     public ComputerMenu(int id, Inventory inventory, Container container) {
         super(Informaticraft.COMPUTER_MENU_TYPE.get(), id);
         this.container = container;
-        this.addSlot(new Slot(container, 0, 44, 20));
-        for(int y = 0; y < 3; ++y) {
-            for(int x = 0; x < 9; ++x) {
-                this.addSlot(new Slot(inventory, x + y * 9 + 9, 8 + x * 18, 84 + y * 18 + x * 4));
+        this.addSlot(new Slot(container, 0, 60, 35));
+        this.addSlot(new Slot(container, 1, 105, 35));
+        for(int y = 0; y < 3; y++) {
+            for(int x = 0; x < 9; x++) {
+                this.addSlot(new Slot(inventory, x + y * 9 + 9, 8 + x * 18, 84 + y * 18));
             }
         }
-
-        for(int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(inventory, i, 8 + i * 18, 142 + i * 4));
+        for(int i = 0; i < 9; i++) {
+            this.addSlot(new Slot(inventory, i, 8 + i * 18, 142));
         }
     }
 

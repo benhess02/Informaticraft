@@ -20,7 +20,7 @@ public class ComputerBlockEntity extends BaseContainerBlockEntity {
 
     public ComputerBlockEntity(BlockPos pos, BlockState state) {
         super(Informaticraft.COMPUTER_BLOCK_ENTITY.get(), pos, state);
-        items = NonNullList.withSize(1, ItemStack.EMPTY);
+        items = NonNullList.withSize(2, ItemStack.EMPTY);
     }
 
     @Override
